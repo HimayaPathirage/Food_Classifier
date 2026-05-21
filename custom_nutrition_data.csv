@@ -1,0 +1,12 @@
+Food_Item,Calories,Carbs,Protein,Fat
+Bread,285.0,36.0,12.0,10.0
+Dairy products,295.0,30.0,17.0,14.0
+Meat,221.0,27.0,6.0,7.0
+Noodles-Pasta,205.0,45.0,4.0,0.4
+Rice,133.0,18.0,3.0,5.0
+Seafood,80.0,10.0,2.0,4.0
+Soup,300.0,40.0,6.0,11.0
+Vegetable-Fruit,207.0,24.0,4.0,11.0
+Dessert,350.0,50.0,4.0,18.0
+Egg,155.0,1.1,13.0,11.0
+Fried food,275.0,36.0,14.0,10.0

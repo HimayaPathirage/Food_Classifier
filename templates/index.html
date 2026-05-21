@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Intelligence System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+
+        <div class="content-wrapper">
+            <div class="left-side">
+                <h1 class="logo">Food<span>Intelligence</span></h1>
+                <h2 class="title">AI-Powered Food  Classifier</h2>
+                <p class="description">
+                    Identify your meal in an instant. Our intelligent recognition system 
+                    identifies your meal and provides a quick breakdown of its key components.
+                </p>
+
+                <form action="/predict" method="post" enctype="multipart/form-data">
+                    <div class="upload-container">
+                        <input type="file" name="file" id="fileInput" accept="image/*" required hidden>
+                        <label for="fileInput" class="custom-label">Choose Food Image</label>
+                    </div>
+                    <button type="submit" class="btn-analyze">Classify Food</button>
+                </form>
+            </div>
+
+            <div class="right-side">
+                {% if prediction %}
+                    <div class="result-card">
+                        <img src="{{ url_for('static', filename='uploads/' + user_image) }}" class="user-img">
+                        
+                        <div class="info">
+                            <h3>Detected: <span class="food-name">{{ prediction }}</span></h3>
+                            <div class="stats-grid">
+                                <div class="stat"><strong>Calories:</strong> {{ nutrition.Calories }}kcal</div>
+                                <div class="stat"><strong>Protein:</strong> {{ nutrition.Protein }}g</div>
+                                <div class="stat"><strong>Carbs:</strong> {{ nutrition.Carbs }}g</div>
+                                <div class="stat"><strong>Fat:</strong>{{ nutrition.Fat }}g</div>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="empty-state">
+                        
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
