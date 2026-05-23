@@ -25,15 +25,16 @@ Pandas
 Werkzeug
 
 🧠 Model Details
-Property        Value
 
-Architecture    CNN (custom, trained on food)
+Property            Value
 
-Input Size      160 × 160 px
+Architecture        CNN (custom, trained on food)
 
-Normalization   ImageNet mean/std
+Input Size          160 × 160 px
 
-Output          Classes5
+Normalization       ImageNet mean/std
+
+Output              Classes5
 
 
 🚀 Running the Application Locally
