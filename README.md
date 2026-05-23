@@ -26,15 +26,14 @@ Werkzeug
 
 🧠 Model Details
 
-Property            Value
-
-Architecture        CNN (custom, trained on food)
-
-Input Size          160 × 160 px
-
-Normalization       ImageNet mean/std
-
-Output              Classes5
+| Property | Value |
+|-----------|--------|
+| Architecture | CNN (custom trained food classification model) |
+| Input Size | 160 × 160 px |
+| Normalization | ImageNet mean/std |
+| Output Classes | 5 |
+| Food Categories | Egg, Meat, Noodles-Pasta, Rice, Vegetable-Fruit |
+| Framework | TensorFlow / Keras |
 
 
 🚀 Running the Application Locally
