@@ -35,20 +35,70 @@ Normalization   ImageNet mean/std
 
 Output          Classes5
 
-🚀 Running the App
 
-1.Clone or download this repository.
+🚀 Running the Application Locally
 
-2.Place the required files in the project root:
-  
-  best_food_model_v2.h5 — the trained model
-  
-  custom_nutrition_data.csv — nutrition data
+This application currently runs locally and has not been deployed online. The implementation instructions are below.
 
-3.Start the Flask server:
-  
-  bash
-  
-  python app.py
+Please follow the steps below to run the application on a local machine.
 
-4. Open your browser and go to: http://127.0.0.1:5000
+### Step 1: Download the Project
+
+Clone the repository or download the ZIP file and extract it.
+
+```bash
+git clone https://github.com/HimayaPathirage/Food_Classifier.git
+```
+
+### Step 2: Open the Project Folder
+
+Navigate to the project directory.
+
+```bash
+cd Food_Classifier
+```
+
+### Step 3: Install Required Libraries
+
+Install all required Python dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Verify Required Files
+
+Ensure the following files are present in the project root directory:
+
+- `app.py`
+- `best_food_model_v2.h5`
+- `custom_nutrition_data.csv`
+
+Also ensure the folders below exist:
+
+- `templates/`
+- `static/`
+
+### Step 5: Run the Application
+
+```bash
+python app.py
+```
+
+### Step 6: Open the Application
+
+After running the command, the terminal should display:
+
+```text
+Running on http://127.0.0.1:5000
+```
+
+Open a web browser and go to:
+
+```text
+http://127.0.0.1:5000
+```
+
+The Food Intelligence application interface should now be available for use.
+
+
